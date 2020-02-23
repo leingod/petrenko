@@ -1,0 +1,22 @@
+def celcius(ccs, ):
+   return ccs * 9 / 5 + 32
+
+def farenheit(fht):
+   return (fht - 32)*  5 / 9
+
+print("Select operation.")
+print("1.Celcius to Farenheit")
+print("2.Farenheit to Celcius")
+
+choice = input("Enter choice(1/2): ")
+
+num1 = float(input("Enter number you want to convert"))
+
+if choice == '1':
+   print(num1, "Celcius is ", celcius(num1), "Farenheit")
+
+elif choice == '2':
+    print(num1,"Farenheit is ", farenheit(num1), "Celcius")
+
+else:
+    print("Invalid input")
